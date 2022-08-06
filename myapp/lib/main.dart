@@ -681,14 +681,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                       child: Container(
                                         child: Image.asset(
-                                          'assets/images/James_webb.jpeg',
+                                          'assets/images/SCU_homescreen.jpeg',
                                           height: 100,
                                           width: 100,
                                         ),
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf After graduating from Ohlone College with an Associates degree in computer science I will continue my education by obtaining both a bachelors and masters degree in computer science/related fields. I aspire to attend Stanford or Berkeley as they are my dream schools.\n\u25cf Once graduted from my masters program, I will join a company and work full time. After a few years of experience I plan to switch to a more manegerial position in order to aquire a different set of skills.\n\u25cf Now with a background in programming and managment, I will venture off into my biggest aspiration of all, creating a business that truly contributes to the greater good of humainty",
+                                    "\u25cf ",
                                     style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
@@ -867,12 +867,104 @@ class _MyHomePageState extends State<MyHomePage> {
                         Padding(
                           padding: const EdgeInsets.only(top: 5, bottom: 0),
                           child: Center(
-                            child: Text("Projects",
+                            child: Text("Skills",
                                 style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     color: Colors.black,
                                     fontSize: 22)),
                           ),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Center(
+                                    child: Text(
+                                      "Technical",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 22),
+                                    ),
+                                  ),
+                                  Text(
+                                    "C++",
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                        overflow: TextOverflow.visible),
+                                  ),
+                                  Text(
+                                    "Dart/Flutter",
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                        overflow: TextOverflow.visible),
+                                  ),
+                                  Text(
+                                    "Javascript/CSS/HTML",
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                        overflow: TextOverflow.visible),
+                                  ),
+                                  Text(
+                                    "Solidity (beginner)",
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                        overflow: TextOverflow.visible),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Center(
+                                    child: Text("Intrapersonal",
+                                        style: TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 22)),
+                                  ),
+                                  Text("Leadership",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                          fontSize: 16)),
+                                  Text("Strong work Ethic",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                          fontSize: 16)),
+                                  Text("Team Work",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                          fontSize: 16)),
+                                  Text("Disciplined",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                          fontSize: 16)),
+                                ],
+                              ),
+                            )
+                          ],
                         ),
 
                         Container(
