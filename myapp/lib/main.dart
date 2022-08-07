@@ -1,9 +1,13 @@
 import 'dart:ui';
 
 import 'package:expandable/expandable.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/link.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -230,7 +234,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("text",
+                                      expanded: Text("I am keen on gene editing and its potential to improve the human condition. I am motivated by the possibility of using this technology to cure genetic disorders and improve human health. Biohacking is a subset of gene editing that excites me, it can be used to perfect human evolution and optimize many functions in the body.",
                                           style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
@@ -271,7 +275,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("text",
+                                      expanded: Text("Artificial intelligence interests me because it is an area that has the potential to revolutionize so many aspects of our lives. With the rapid advancements in the field, AI has the ability to change the way we live, work, and play. I am excited to explore the possibilities that artificial intelligence presents and to be a part of its future development. In all honesty, this statement was written by an AI. I created a small application that uses openAI's davinci model.",
                                           style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
@@ -312,7 +316,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("text",
+                                      expanded: Text("Spaceflight, especially the exploration and colonization of other planets, has always intrigued me. Even as a small child, I was captivated by the idea of people traveling to other worlds. And while movies and books often depict spacecraft as sleek and sexy machines, the reality is that most of the work of spaceflight is actually done by software. Software plays a critical role in spaceflight, from the ground control systems that communicate with and direct spacecraft, to the onboard computers that control navigation and operate the spacecraft's systems. Software is also essential for mission planning and analysis, and for the development of new spacecraft technologies. I look forward to seeing the role of software continue to grow and evolve as we explore new worlds and extend humanity's reach into the cosmos.",
                                           style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
@@ -637,19 +641,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontSize: 22)),
                           ),
                         ),
-
-                        // Container(
-                        //   height: 200,
-                        //   color: Colors.red,
-                        // ),
-                        // Container(
-                        //   height: 200,
-                        //   color: Colors.red,
-                        // ),
-                        // Container(
-                        //   height: 200,
-                        //   color: Colors.red,
-                        // )
                       ],
                     ),
                   ),
@@ -680,15 +671,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                   header: Padding(
                                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                       child: Container(
-                                        child: Image.asset(
-                                          'assets/images/SCU_homescreen.jpeg',
-                                          height: 100,
-                                          width: 100,
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  bottom: 5),
+                                              child: Text(
+                                                "Refugee App (Internship)",
+                                                maxLines: 1,
+                                                style: TextStyle(
+                                                    fontFamily: 'Montserrat',
+                                                    fontSize: 12,
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.bold,
+                                                    overflow:
+                                                        TextOverflow.visible),
+                                              ),
+                                            ),
+                                            Image.asset(
+                                              'assets/images/SCU_homescreen.jpeg',
+                                              height: 100,
+                                              width: 100,
+                                            ),
+                                          ],
                                         ),
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf ",
+                                    "\u25cf 2022 Summer internship at Santa Clara University's Frugal Innovation Hub.\n\u25cf The app is centered around helping newly displaced refugees adapt to foreign environments by providing many relevant tools in one area.\n\u25cf It was designed and developed over a 10 week period with a partner.\n\u25cf Tools: Figma(UI/UX), Flutter(Front end), Dart(Backend), Github(Version control)",
                                     style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
@@ -718,15 +731,38 @@ class _MyHomePageState extends State<MyHomePage> {
                                   header: Padding(
                                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                       child: Container(
-                                        child: Image.asset(
-                                          'assets/images/James_webb.jpeg',
-                                          height: 100,
-                                          width: 100,
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  bottom: 5),
+                                              child: Text(
+                                                "Ethereum Dapp",
+                                                maxLines: 1,
+                                                style: TextStyle(
+                                                    fontFamily: 'Montserrat',
+                                                    fontSize: 12,
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.bold,
+                                                    overflow:
+                                                        TextOverflow.visible),
+                                              ),
+                                            ),
+                                            Image.asset(
+                                              'assets/images/Sol.jpeg',
+                                              fit: BoxFit.scaleDown,
+                                              height: 100,
+                                              width: 100,
+                                            ),
+                                          ],
                                         ),
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf After graduating from Ohlone College with an Associates degree in computer science I will continue my education by obtaining both a bachelors and masters degree in computer science/related fields. I aspire to attend Stanford or Berkeley as they are my dream schools.\n\u25cf Once graduted from my masters program, I will join a company and work full time. After a few years of experience I plan to switch to a more manegerial position in order to aquire a different set of skills.\n\u25cf Now with a background in programming and managment, I will venture off into my biggest aspiration of all, creating a business that truly contributes to the greater good of humainty",
+                                    "\u25cf This was a fully functioning application on the Ethereum blockchain.\n\u25cf I learned in depth how the Etherum Blockchain works and how it could be leveraged to revolutionize modern financial systems.\n\u25cf Many new technologies were used to create this project, Solidty for the smart contracts code, React for the front end, Javascipt for the back end, Web3 to connect the backend to the Etherum node (infura), and truffle as my wallet provider.\n\u25cf Sadly this project no longer runs, all the technologies have updated faster than I can maintain. It was still a great experience and has encouraged me to create a club on campus. It provide a motivating space for blockchain enthusiasts.",
                                     style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
@@ -761,21 +797,67 @@ class _MyHomePageState extends State<MyHomePage> {
                                   header: Padding(
                                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                       child: Container(
-                                        child: Image.asset(
-                                          'assets/images/James_webb.jpeg',
-                                          height: 100,
-                                          width: 100,
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  bottom: 5, top: 5),
+                                              child: Text(
+                                                "UN Sustainability Lab",
+                                                maxLines: 1,
+                                                style: TextStyle(
+                                                    fontFamily: 'Montserrat',
+                                                    fontSize: 12,
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.bold,
+                                                    overflow:
+                                                        TextOverflow.visible),
+                                              ),
+                                            ),
+                                            Image.asset(
+                                              'assets/images/Zero.png',
+                                              height: 100,
+                                              width: 100,
+                                            ),
+                                          ],
                                         ),
                                       )),
                                   collapsed: SizedBox.shrink(),
-                                  expanded: Text(
-                                    "\u25cf ",
-                                    style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        overflow: TextOverflow.visible),
-                                  ),
+                                  expanded: RichText(
+                                      text: TextSpan(children: <TextSpan>[
+                                    TextSpan(
+                                        text:
+                                            "\u25cf The UN Sustainability Lab was a group project that I led. We were given data that represented a delivery trucks route that would serve local pop ups.\n\u25cf We were tasked with creating the business logic for the delviery system which included optimizing the routes.\n\u25cfOur soultion was non recursive and only optimsied for the next best stop.",
+                                        style: TextStyle(
+                                            fontFamily: 'Montserrat',
+                                            fontSize: 16,
+                                            color: Colors.black,
+                                            overflow: TextOverflow.visible)),
+                                    TextSpan(
+                                      text: "\n\u25cf link to project\n",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 16,
+                                          color: Colors.blue,
+                                          overflow: TextOverflow.visible),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = (() => {
+                                              launchUrlString(
+                                                  'https://replit.com/@JaydenJardine/cs116GroupProjecttrial#helpers.cpp') /**launchUrl(Uri(scheme:"https", host: 'replit.com', path:'@JaydenJardine/cs116GroupProjecttrial#helpers.cpp'*))*/
+                                            }),
+                                    ),
+                                    TextSpan(
+                                      text: "\u25cfTo run type \"./run\"",
+                                      style: TextStyle(
+                                          fontFamily: 'Montserrat',
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                          overflow: TextOverflow.visible),
+                                    )
+                                  ])),
                                   builder: (_, collapsed, expanded) {
                                     return Padding(
                                       padding: EdgeInsets.only(
@@ -799,15 +881,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                   header: Padding(
                                       padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                       child: Container(
-                                        child: Image.asset(
-                                          'assets/images/James_webb.jpeg',
-                                          height: 100,
-                                          width: 100,
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  bottom: 5),
+                                              child: Text(
+                                                "E-Portfolio app",
+                                                maxLines: 1,
+                                                style: TextStyle(
+                                                    fontFamily: 'Montserrat',
+                                                    fontSize: 12,
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.bold,
+                                                    overflow:
+                                                        TextOverflow.visible),
+                                              ),
+                                            ),
+                                            Image.asset(
+                                              'assets/images/this.png',
+                                              height: 100,
+                                              width: 100,
+                                            ),
+                                          ],
                                         ),
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf After graduating from Ohlone College with an Associates degree in computer science I will continue my education by obtaining both a bachelors and masters degree in computer science/related fields. I aspire to attend Stanford or Berkeley as they are my dream schools.\n\u25cf Once graduted from my masters program, I will join a company and work full time. After a few years of experience I plan to switch to a more manegerial position in order to aquire a different set of skills.\n\u25cf Now with a background in programming and managment, I will venture off into my biggest aspiration of all, creating a business that truly contributes to the greater good of humainty",
+                                    "\u25cf This entire portfolio was a project in its self. Many hours of work have been put into the project, its something I will continually update and expand on.",
                                     style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
@@ -969,15 +1073,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
                         Container(
                           height: 200,
-                          color: Colors.red,
+                          color: Colors.white,
                         ),
                         Container(
                           height: 200,
-                          color: Colors.red,
+                          color: Colors.white,
                         ),
                         Container(
                           height: 200,
-                          color: Colors.red,
+                          color: Colors.white,
                         )
                       ],
                     ),
@@ -1001,7 +1105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // )
         ),
       ),
-      drawer: Drawer(),
+      //drawer: Drawer(),
     );
   }
 }
