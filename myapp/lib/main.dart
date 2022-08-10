@@ -151,8 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ),
                                       collapsed: SizedBox.shrink(),
                                       expanded: Text(
-                                          "I first heard about bitcoin in 2015, during my freshman year of highschool. At this time I had no clue what a blockchain was nor did I have any money to invest in it, but I did have this deep desire and profound feeling that it would be impactful. During my freshman year I did loads of research to get a better understanding of what is was and how it worked. After months of research I tried to convince my family to invest when the price was around 1800 dollars... After a few years I would become more and more interested in this technology and start to invest alot of my money into it as well as develop Dapps on the Ethereum network.",
-                                          style: TextStyle(
+                                          "I first heard about bitcoin in 2015 during my freshman year of high school. At this time I had no clue what a blockchain was nor did I have any money to invest in it, but I did have this deep desire and profound feeling that it would be impactful. During that freshman year, I would do loads of research to get a better understanding of what it was and how it worked. After months of research, I tried to convince my family to invest in this relatively new technology called bitcoin back when the price was around 1800 dollars... After a few years, I would become more and more interested in this technology and start to invest a lot of my money into it as well as develop Dapps on the Ethereum network.",                                          style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
                                               color: Colors.black,
@@ -193,8 +192,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ),
                                       collapsed: SizedBox.shrink(),
                                       expanded: Text(
-                                          "Throughout highschool I was overweight and didnt takecare of health and was uninformed on sustainable eating habits. This changed during my senior year of highschool after a good freind of my tunred me on to working out and kicking junk food. I then dove deep into the sport of weight lifting and prioritized nutrition. Over then next 3 years I went from being 240lb's and overweight to an incredibly conditioned and healthy athlete.",
-                                          style: TextStyle(
+                                          "Throughout high school, I was overweight and didn't take care of my health, and was uninformed on sustainable eating habits. This changed during my senior year of high school after a good friend of mine turned me on to working out and kicking junk food. I then dove deep into the sport of weight lifting and prioritized nutrition. Over the next 3 years, I went from being 240 lb and overweight to an incredibly conditioned and healthy athlete.",                                          style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
                                               color: Colors.black,
@@ -234,7 +232,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("I am keen on gene editing and its potential to improve the human condition. I am motivated by the possibility of using this technology to cure genetic disorders and improve human health. Biohacking is a subset of gene editing that excites me, it can be used to perfect human evolution and optimize many functions in the body.",
+                                      expanded: Text(
+                                        "I am keen on gene editing and its potential to improve the human condition. I am motivated by the possibility of using this technology to cure genetic disorders and improve human health. Biohacking is a subset of gene editing that excites me, it can be used to perfect human evolution and optimize many functions in the body.",
                                           style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
@@ -275,8 +274,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("Artificial intelligence interests me because it is an area that has the potential to revolutionize so many aspects of our lives. With the rapid advancements in the field, AI has the ability to change the way we live, work, and play. I am excited to explore the possibilities that artificial intelligence presents and to be a part of its future development. In all honesty, this statement was written by an AI. I created a small application that uses openAI's davinci model.",
-                                          style: TextStyle(
+                                      expanded: Text(
+                                        "Artificial intelligence interests me because it is an area that has the potential to revolutionize so many aspects of our lives. With the rapid advancements in the field, AI has the ability to change the way we live, work, and play. I am excited to explore the possibilities that artificial intelligence presents and to be a part of its future development. In all honesty, this statement was written by an AI. I created a small application that uses openAI's DaVinci model.",                                          style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
                                               color: Colors.black,
@@ -316,8 +315,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                         ),
                                       ),
                                       collapsed: SizedBox.shrink(),
-                                      expanded: Text("Spaceflight, especially the exploration and colonization of other planets, has always intrigued me. Even as a small child, I was captivated by the idea of people traveling to other worlds. And while movies and books often depict spacecraft as sleek and sexy machines, the reality is that most of the work of spaceflight is actually done by software. Software plays a critical role in spaceflight, from the ground control systems that communicate with and direct spacecraft, to the onboard computers that control navigation and operate the spacecraft's systems. Software is also essential for mission planning and analysis, and for the development of new spacecraft technologies. I look forward to seeing the role of software continue to grow and evolve as we explore new worlds and extend humanity's reach into the cosmos.",
-                                          style: TextStyle(
+                                      expanded: Text(
+                                       "Spaceflight, especially the exploration and colonization of other planets, has always intrigued me. Even as a small child, I was captivated by the idea of people traveling to other worlds. And while movies and books often depict spacecraft as sleek and sexy machines, the reality is that most of the work of spaceflight is done by software. Software plays a critical role in spaceflight, from the ground control systems that communicate with and direct spacecraft to the onboard computers that control navigation and operate the spacecraft's systems. Software is also essential for mission planning and analysis, and for the development of new spacecraft technologies. I look forward to seeing the role of software continue to grow and evolve as we explore new worlds and extend humanity's reach into the cosmos.",                                          style: TextStyle(
                                               fontFamily: 'Montserrat',
                                               fontSize: 16,
                                               color: Colors.black,
@@ -435,7 +434,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ),
                                       collapsed: SizedBox.shrink(),
                                       expanded: Text(
-                                        "My main goal in life has always been to do as much good as possible and impact the most amount of people in a postive way. Computer science has the highest odds of accomplishing my dreams and just so happend to be something im inordinately passionate about.",
+                                        "My main goal in life has always been to do as much good as possible and impact the most amount of people in a positive way. Computer science has the highest odds of accomplishing my dreams and just so happened to be something I'm inordinately passionate about.",
                                         style: TextStyle(
                                             fontFamily: 'Montserrat',
                                             fontSize: 16,
@@ -510,8 +509,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                       const EdgeInsets.only(
                                                           left: 5),
                                                   child: Text(
-                                                    "\u25cf This coming semester (fall 2022), I will be founding a club centered around blockchain development. We will explore how different blockchains work and develep Dapps(Decentralised Applications) on the Ethereum network using Solidity smart contracts.\n\u25cf Moving forward I plan to continually find internship opportunities as well as possible part time jobs within the tech industry.",
-                                                    style: TextStyle(
+                                                   "\u25cf This coming semester (fall 2022), I will be founding a club centered around blockchain development. We will explore how different blockchains work and develop Dapps(Decentralized Applications) on the Ethereum network using Solidity smart contracts.\n\u25cf Moving forward I plan to continually find internship opportunities as well as possible part-time jobs within the tech industry.",                                                    style: TextStyle(
                                                         fontFamily:
                                                             'Montserrat',
                                                         fontSize: 16,
@@ -565,8 +563,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 ),
                                                 collapsed: SizedBox.shrink(),
                                                 expanded: Text(
-                                                  "\u25cf After graduating from Ohlone College with an Associates degree in computer science I will continue my education by obtaining both a bachelors and masters degree in computer science/related fields. I aspire to attend Stanford or Berkeley as they are my dream schools.\n\u25cf Once graduted from my masters program, I will join a company and work full time. After a few years of experience I plan to switch to a more manegerial position in order to aquire a different set of skills.\n\u25cf Now with a background in programming and managment, I will venture off into my biggest aspiration of all, creating a business that truly contributes to the greater good of humainty",
-                                                  style: TextStyle(
+                                                 "\u25cf After graduating from Ohlone College with an associate's degree in computer science I will continue my education by obtaining both a bachelor's and master's degree in computer science/related fields. I aspire to attend Stanford or Berkeley as they are my dream schools.\n\u25cf Once I graduate from my master's program, I will join a company and work full time. After a few years of experience, I plan to switch to a more managerial position to acquire a different set of skills.\n\u25cf Now with a background in programming and management, I will venture off into my biggest aspiration of all, creating a business that truly contributes to the greater good of humanity",                                                  style: TextStyle(
                                                       fontFamily: 'Montserrat',
                                                       fontSize: 16,
                                                       color: Colors.black,
@@ -701,8 +698,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf 2022 Summer internship at Santa Clara University's Frugal Innovation Hub.\n\u25cf The app is centered around helping newly displaced refugees adapt to foreign environments by providing many relevant tools in one area.\n\u25cf It was designed and developed over a 10 week period with a partner.\n\u25cf Tools: Figma(UI/UX), Flutter(Front end), Dart(Backend), Github(Version control)",
-                                    style: TextStyle(
+                                    "\u25cf 2022 Summer internship at Santa Clara University's Frugal Innovation Hub.\n\u25cf The app is centered around helping newly displaced refugees adapt to foreign environments by providing many relevant tools in one area.\n\u25cf It was designed and developed over 10 weeks with a partner.\n\u25cf Tools: Figma(UI/UX), Flutter(Front end), Dart(Backend), Github(Version Control)",                                    style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
                                         color: Colors.black,
@@ -762,8 +758,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf This was a fully functioning application on the Ethereum blockchain.\n\u25cf I learned in depth how the Etherum Blockchain works and how it could be leveraged to revolutionize modern financial systems.\n\u25cf Many new technologies were used to create this project, Solidty for the smart contracts code, React for the front end, Javascipt for the back end, Web3 to connect the backend to the Etherum node (infura), and truffle as my wallet provider.\n\u25cf Sadly this project no longer runs, all the technologies have updated faster than I can maintain. It was still a great experience and has encouraged me to create a club on campus. It provide a motivating space for blockchain enthusiasts.",
-                                    style: TextStyle(
+                                    "\u25cf This was a fully functioning application on the Ethereum blockchain.\n\u25cf I learned in depth how the Ethereum Blockchain works and how it could be leveraged to revolutionize modern financial systems.\n\u25cf Many new technologies were used to create this project, Solidity for the smart contract's code, React for the front end, Javascript for the back end, Web3 to connect the backend to the Ethereum node (infura), and truffle as my wallet provider.\n\u25cf Sadly this project no longer runs, all the technologies have updated faster than I can maintain. It was still a great experience and has encouraged me to create a club on campus to provide a motivating space for blockchain enthusiasts.",                                    style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
                                         color: Colors.black,
@@ -830,8 +825,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       text: TextSpan(children: <TextSpan>[
                                     TextSpan(
                                         text:
-                                            "\u25cf The UN Sustainability Lab was a group project that I led. We were given data that represented a delivery trucks route that would serve local pop ups.\n\u25cf We were tasked with creating the business logic for the delviery system which included optimizing the routes.\n\u25cfOur soultion was non recursive and only optimsied for the next best stop.",
-                                        style: TextStyle(
+                                           "\u25cf The UN Sustainability Lab was a group project that I led. We were given data that represented a delivery truck route that would serve local pop ups.\n\u25cf We were tasked with creating the business logic for the delivery system which included optimizing the routes.\n\u25cfOur solution was non-recursive and only optimized for the next best stop.",                                        style: TextStyle(
                                             fontFamily: 'Montserrat',
                                             fontSize: 16,
                                             color: Colors.black,
@@ -911,8 +905,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       )),
                                   collapsed: SizedBox.shrink(),
                                   expanded: Text(
-                                    "\u25cf This entire portfolio was a project in its self. Many hours of work have been put into the project, its something I will continually update and expand on.",
-                                    style: TextStyle(
+                                    "\u25cf This entire portfolio was a project in itself. Many hours of work have been put into the project, its something I will continually update and expand on.",                                    style: TextStyle(
                                         fontFamily: 'Montserrat',
                                         fontSize: 16,
                                         color: Colors.black,
